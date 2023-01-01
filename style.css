@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(213, 198, 248);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 340px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.container {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #919191;
+    background-color: rgb(247, 245, 245);
+    height: 550px;
+    padding: 8px;
+}
+.result  {
+    height: 50px;
+    
+}
+button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #bdbcbc;
+}
+button:active {
+    font-size: 15px;
+}
+.result {
+    height: 100px;
+}
+
+.history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+     color: #919191;
+}
+.output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.keys {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 40px;
+    gap: 30px;
+    margin-top: 20px;
+    height: 400px;
+   
+}
+.first,.second,.third,.fourth,.fifth {
+     display: flex;
+     gap: 40px;
+}
+.first .operator {
+    background-color: #919191;
+    color: #ffff;
+    transition: all 0.3s linear;
+}
+.first .operator:hover {
+    background-color: #8a8989;
+    
+}
+.operator,.first .operator:nth-child(4) {
+    background-color: #9118af;
+    color: #fff;
+    
+}
+.operator:hover ,.first .operator:nth-child(4):hover  {
+    background-color: #d47aeb;
+    transition: all 0.3s linear;
+}
+.empty {
+    visibility: hidden;
+}
